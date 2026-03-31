@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow Pomodoro Timer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="timer-card" aria-labelledby="app-title">
+        <p class="eyebrow">Milestone 1</p>
+        <h1 id="app-title">FocusFlow</h1>
+        <p class="subtitle">A simple focus timer for Pomodoro work sessions.</p>
+
+        <div class="status-panel">
+          <span class="status-label">Current mode</span>
+          <strong id="mode-label" class="status-value">Focus</strong>
+        </div>
+
+        <p
+          id="timer-display"
+          class="timer-display"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          25:00
+        </p>
+
+        <div class="controls" aria-label="Timer controls">
+          <button id="start-button" type="button">Start</button>
+          <button id="pause-button" type="button">Pause</button>
+          <button id="reset-button" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
